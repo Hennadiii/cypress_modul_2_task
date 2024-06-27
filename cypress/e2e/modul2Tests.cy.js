@@ -5,19 +5,22 @@ describe('modul2Tests', () => {
 
     cy.login('user888@gmail.com', '1234567890');
 
-    cy.get(':nth-child(12) > .next-bve2vl')
+    /*cy.get(':nth-child(12) > .next-bve2vl')
       .scrollIntoView()
       .should('be.visible')
-      .click();
+      .click();*/
+      cy.contains('button', 'Log out').click();git addEventListener.
   });
   it('Test2', () => {
     cy.visit('https://www.edu.goit.global/account/login');
 
     cy.login('testowyqa@qa.team', 'QA!automation-1');
 
-    cy.get(':nth-child(8) > .next-bve2vl')
+    /*cy.get('#__next > header > div > div > nav > div:nth-child(8) > button')
       .scrollIntoView()
       .should('be.visible')
-      .click();
+      .click();*/
+      cy.contains('button', 'Log out').click();
+
   });
 });
