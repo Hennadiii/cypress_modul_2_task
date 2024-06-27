@@ -9,7 +9,7 @@ describe('modul2Tests', () => {
       .scrollIntoView()
       .should('be.visible')
       .click();*/
-      cy.contains('button', 'Log out').click();git addEventListener.
+      cy.contains('button', 'Log out').click();
   });
   it('Test2', () => {
     cy.visit('https://www.edu.goit.global/account/login');
