@@ -13,15 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '12'
-
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run Cypress tests in Chrome
         run: npx cypress run --browser chrome
-        env:
-          CI: true
